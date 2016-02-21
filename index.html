@@ -14,7 +14,8 @@
                 success: function(data) {
                     for (var i = 0; i < 1; i++) {
                         console.log(data);
-                        $("#pics").append("<img src='" + data.data[0]['images']['standard_resolution']['url'] + " ' style='width:100%;'></img>");
+                        $("#pics").append("<img src='" + data.data[0]['images']['standard_resolution']['url'] +
+                        " ' style='width:100%;' class='rotate90'></img>");
                     }
                 }
             });
@@ -24,12 +25,18 @@
             location.reload();
         }
 
-        setTimeout(reloadpage, 100000) // every 100 seconds
+        setTimeout(reloadpage, 120000) // every 120 seconds
     </script>
     <meta charset=utf-8 />
     <title>Last Instagram Pic</title>
 </head>
-
+<style>
+    .rotate90 {
+        -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg); -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+</style>
 <body>
     <p id="pics"></p>
 </body>
