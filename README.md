@@ -1,8 +1,8 @@
-Last-Instagram-Pic
-==================
+Last Instagram Pic to Kindle
+============================
 
-A simple way to get the last Instagram picture from yourself.
-I'm using for my Kindle Viewer.
+A simple way to get the last Instagram picture from yourself to a webpage.
+I'm using for a Digital Photoframe made of my old Kindle.
 
 How to make a Kindle Instagram-Latest Photo Display
 ---------------------------------------------------
